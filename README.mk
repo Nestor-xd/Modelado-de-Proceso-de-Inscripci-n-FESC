@@ -1,96 +1,79 @@
-<div align="center">
+# 🎓 Proceso de Inscripción Intersemestral – FESC
 
-# 🎓 **FESC – Proceso de Inscripción Intersemestral**
-
-📘 *Modelado de proceso académico con UML Activity Diagram (AS-IS / TO-BE)*  
-**Autor:** Erick Sebastián Pérez Carvajal  
-**Unidad de Desarrollo – FESC | Ingeniería de Software | 2025**
-
-</div>
-
----
-
-## 🎯 **Objetivo**
+## 🎯 Objetivo
 Diseñar y modelar el **proceso completo de inscripción a cursos intersemestrales** en la FESC, aplicando los conceptos de **diagramas de actividades UML** para identificar puntos críticos y proponer mejoras técnicas.
 
 ---
 
-## ⚙️ **Actores del Proceso**
-
-| Actor | Rol principal |
-|:------|:---------------|
-| 👩‍🎓 **Estudiante** | Inicia la inscripción, selecciona materias y realiza el pago. |
-| 💻 **Sistema Académico** | Valida prerrequisitos, verifica cupos y registra inscripciones. |
-| 🧾 **Tesorería** | Procesa pagos y genera recibos oficiales. |
-| 🧑‍🏫 **Docente** | Recibe listado de inscritos y actualiza su grupo. |
-| 🧩 **Coordinación Académica** | Gestiona excepciones y autorizaciones especiales. |
+## ⚙️ Actores del Proceso
+- **Estudiante:** Inicia la inscripción, selecciona materias y realiza el pago.  
+- **Sistema Académico:** Valida prerrequisitos, verifica cupos y registra inscripciones.  
+- **Coordinación Académica:** Gestiona excepciones y autorizaciones especiales.  
+- **Docente:** Recibe listado de inscritos y actualiza su grupo.  
+- **Tesorería:** Procesa pagos y genera recibos oficiales.
 
 ---
 
-## 🧩 **Modelado del Proceso**
+## 🧩 Modelado del Proceso
 
-### 🔹 **Versión AS-IS (Proceso Actual)**
+### 🔹 Versión AS-IS (Proceso Actual)
 Flujo con validaciones manuales y pasos secuenciales:
 
-- Validación manual de prerrequisitos y cupos.  
-- Cálculo de pagos centralizado en Tesorería.  
-- Activación del aula virtual posterior al pago.  
+- Revisión de prerrequisitos y cupos con intervención humana.  
+- Cálculo de pagos realizado por Tesorería.  
+- Activación del aula virtual después de la conciliación de pago.  
 - Comunicación tardía con docentes.
 
-📄 **Archivo:** `diagrama_inscripcion_v1.puml`  
-🖼️ **Imagen exportada:** `diagrama_inscripcion_v1.png`
+📄 **Archivo:** `diagrama_inscripcion_v1.puml`
 
 ---
 
-### 🔹 **Versión TO-BE (Proceso Optimizado)**
+### 🔹 Versión TO-BE (Proceso Optimizado)
 Flujo automatizado con validaciones paralelas y pagos integrados:
 
-- Validaciones automáticas mediante motor de reglas.  
-- Pasarela de pago integrada con **confirmación en tiempo real (webhook)**.  
-- Activación automática del aula virtual vía API.  
-- Notificaciones simultáneas a estudiantes y docentes.
+- Validaciones automáticas mediante reglas de negocio.  
+- Pasarela de pago con **confirmación en tiempo real (webhook)**.  
+- Integración con LMS para activar el aula virtual automáticamente.  
+- Notificaciones inmediatas a docentes y estudiantes.
 
-📄 **Archivo:** `diagrama_inscripcion_v2.puml`  
-🖼️ **Imagen exportada:** `diagrama_inscripcion_v2.png`
+📄 **Archivo:** `diagrama_inscripcion_v2.puml`
 
 ---
 
-## 📊 **Comparativa de Métricas**
+## 📊 Comparativa de Métricas
 
 | Métrica | AS-IS | TO-BE | Mejora |
-|:--------|:-----:|:-----:|:--------|
+|----------|------:|------:|--------|
 | Actividades totales | 29 | 26 | Reducción por automatización |
 | Puntos de decisión | 6 | 5 | Decisiones más claras |
 | Fork/Join | 2 | 3 | Mayor paralelización |
 | Actores | 5 | 5 | Misma estructura |
-| Nivel de automatización | Medio | Alto | Integración con APIs |
+| Automatización | Media | Alta | Integración API y pagos automáticos |
 | Facilidad de uso | Media | Alta | Interfaz guiada y pagos integrados |
 
 📊 **Archivo:** `metricas_proceso.xlsx`
 
 ---
 
-## 🚀 **Conclusiones**
+## 🚀 Conclusiones
 El modelo **TO-BE** mejora la eficiencia general del proceso, reduce errores humanos y acelera la confirmación de inscripciones mediante automatización e integración de sistemas.  
-El estudiante obtiene una experiencia más fluida, mientras la institución optimiza los tiempos de validación y conciliación de pagos.
+El estudiante obtiene una experiencia más fluida, mientras que la institución optimiza sus tiempos de validación y conciliación.
 
 ---
 
-## 📂 **Archivos del Proyecto**
+## 📂 Archivos del Proyecto
 
 | Archivo | Descripción |
-|:---------|:-------------|
+|----------|-------------|
 | `diagrama_inscripcion_v1.puml` | Diagrama del proceso actual (AS-IS). |
 | `diagrama_inscripcion_v2.puml` | Diagrama optimizado (TO-BE). |
-| `metricas_proceso.xlsx` | Análisis comparativo de métricas. |
-| `informe_proceso_inscripcion.pdf` | Informe ejecutivo en formato PDF (2 páginas). |
-| `mejoras_propuestas.pptx` | Presentación con 5 diapositivas de las mejoras. |
+| `metricas_proceso.xlsx` | Análisis de métricas comparativas. |
+| `informe_proceso_inscripcion.pdf` | Informe ejecutivo del análisis. |
+| `mejoras_propuestas.pptx` | Presentación resumen (5 diapositivas). |
 
 ---
 
-<div align="center">
-
-🧠 *Autor:*  
-**– Nestor Ivan Granados
-
-</div>
+## 👨‍💻 Autor
+**Nestor Ivan Granados Valenzuela**  
+Estudiante de Ingeniería de Software  
+📅 Año: 2025
