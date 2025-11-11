@@ -1,4 +1,4 @@
-# 🎓 Proceso de Inscripción Intersemestral – FESC
+#🎓 Proceso de Inscripción Intersemestral – FESC
 
 ## 🎯 Objetivo
 Diseñar y modelar el **proceso completo de inscripción a cursos intersemestrales** en la FESC, aplicando los conceptos de **diagramas de actividades UML** para identificar puntos críticos y proponer mejoras técnicas.
@@ -79,3 +79,4 @@ El estudiante obtiene una experiencia más fluida, mientras que la institución 
 **Néstor Iván Granados Valenzuela**  
 Estudiante de Ingeniería de Software  
 📅 Año: 2025
+
